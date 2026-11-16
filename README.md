@@ -37,11 +37,11 @@ We upgraded the vision pipeline to gemini-3.5-flash-lite via the Google GenAI SD
 
 ## Sample sorting_log.txt Output
 ```text
-Shoe/clothing | Trashed correctly | Nov (2026-11-15 07:36:12) | TTC Floor 2 | Bin 12
-Aluminum can | Recycled correctly | Nov (2026-11-15 07:36:45) | TTC Floor 2 | Bin 12
-Paper towel | Recycled incorrectly | Nov (2026-11-15 07:37:19) | Mayer Campus Center | Bin 04
+Electronics | Trashed correctly | Nov | 11/15/2026 | 17:25:22 | Halligan Floor 2 | Bin 03 | data\20261115_172522_electronics.jpg
+Shoe/clothing | Trashed incorrectly | Nov | 11/15/2026 | 07:36:12 | TTC Floor 2 | Bin 12 | data\20261115_172522_shoe_clothing.jpg
+Paper towel | Recycled incorrectly | Nov | 11/15/2026 | 07:37:19 | Mayer Campus Center | Bin 04 | data\20261115_172522_paper_towel.jpg
 ...
---- RUNNING COUNT AFTER 20 ITEMS (2026-11-15 07:45:10) ---
+--- RUNNING COUNT AFTER 20 ITEMS (11/15/2026 07:45:10) ---
 Recycled correctly: 9
 Recycled incorrectly: 4
 Trashed correctly: 5
@@ -55,7 +55,7 @@ By Month (Sep/ Oct / Nov...):
 ## Campus Sustainability Analytics + Data Science Visuals
 
 ### Bin Mis-Sorting Leaderboard
-Ranks every monitored bin against the campus-wide average error rate so facilities and sustainability teams know where to prioritize EcoSort deployments recycling information.
+Ranks every monitored bin against the campus-wide average error rate so facilities and sustainability teams know where to prioritize locations for recycling information release.
 ![Location Error Leaderboard](assets/location_leaderboard.png)
 
 ### Most Frequently Mis-Sorted Items
